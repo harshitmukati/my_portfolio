@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harshit Mukati | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --side:#0E3B43;--side-ink:#E6F2F1;--side-soft:#9FC1C0;
+  --bg:#F4F7F7;--ink:#14262B;--soft:#566A6E;--line:#D6E0E0;--amber:#F5B642;--amber-ink:#8A5A00;
+  --head:"Manrope","Trebuchet MS",sans-serif;--body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--side:#08262B;--bg:#0B1517;--ink:#E3EEEE;--soft:#93A8AB;--line:#223438;--amber-ink:#F5B642}}
+:root[data-theme="dark"]{--side:#08262B;--bg:#0B1517;--ink:#E3EEEE;--soft:#93A8AB;--line:#223438;--amber-ink:#F5B642}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:3px}
+aside{position:fixed;inset:0 auto 0 0;width:300px;background:var(--side);color:var(--side-ink);padding:calc(env(safe-area-inset-top,0px) + 40px) 32px calc(env(safe-area-inset-bottom,0px) + 32px);display:flex;flex-direction:column}
+.mono{width:56px;height:56px;border-radius:50%;background:var(--amber);color:#2A1C00;font:800 20px/56px var(--head);text-align:center}
+aside h1{font:800 28px/1.15 var(--head);margin:18px 0 6px}
+aside .role{color:var(--side-soft);margin:0;font-size:16px}
+nav{margin:36px 0;display:flex;flex-direction:column;gap:4px}
+nav a{text-decoration:none;padding:7px 0 7px 14px;border-left:3px solid transparent;color:var(--side-soft);font-weight:500}
+nav a:hover{color:var(--side-ink)}
+nav a.on{color:var(--side-ink);border-left-color:var(--amber)}
+.side-links{margin-top:auto;display:flex;flex-direction:column;gap:8px;font-size:16px}
+.side-links a{text-decoration-color:var(--amber);text-underline-offset:4px}
+main{margin-left:300px;padding:0 clamp(28px,6vw,80px);max-width:calc(300px + 920px)}
+section{padding:72px 0 24px}
+section+section{border-top:1px solid var(--line);margin-top:48px}
+h2{font:800 15px var(--head);color:var(--amber-ink);margin:0 0 22px;letter-spacing:.02em}
+.lead{font:800 clamp(32px,4.6vw,48px)/1.12 var(--head);letter-spacing:-.02em;margin:0 0 22px;max-width:15em}
+.lead+p{max-width:36em;color:var(--soft);font-size:19px;margin:0}
+.group{display:grid;grid-template-columns:170px 1fr;gap:6px 24px;padding:14px 0;border-bottom:1px solid var(--line)}
+.group:first-of-type{border-top:1px solid var(--line)}
+.group b{font:700 16px var(--head)}
+.group span{color:var(--soft)}
+.proj{display:block;padding:22px 0 22px 20px;border-left:4px solid var(--amber);margin-bottom:18px;text-decoration:none;transition:padding-left .2s}
+.proj:hover{padding-left:30px}
+.proj h3{font:800 22px var(--head);margin:0 0 4px}
+.proj p{margin:0;color:var(--soft)}
+.proj em{font-style:normal;font-weight:600;color:var(--amber-ink)}
+.step{display:grid;grid-template-columns:110px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.step time{font:700 16px var(--head);color:var(--amber-ink)}
+.step h3{font:700 19px var(--head);margin:0}
+.step p{margin:2px 0 0;color:var(--soft);font-size:16.5px}
+.two{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}
+.two h3{font:700 18px var(--head);margin:0 0 4px}
+.two p{margin:0;color:var(--soft);font-size:16.5px}
+.big-mail{font:800 clamp(22px,3.6vw,36px) var(--head);word-break:break-all;text-decoration-color:var(--amber);text-decoration-thickness:4px;text-underline-offset:6px}
+footer{margin-left:300px;padding:32px clamp(28px,6vw,80px) 48px;color:var(--soft);font-size:15px}
+@media (max-width:900px){
+  aside{position:static;width:auto;padding-bottom:28px}
+  nav{flex-direction:row;flex-wrap:wrap;gap:6px 18px;margin:22px 0}
+  nav a{border-left:0;border-bottom:3px solid transparent;padding:4px 0}
+  nav a.on{border-bottom-color:var(--amber)}
+  .side-links{margin-top:0}
+  main,footer{margin-left:0}
+  .group,.step{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  section{padding-top:48px}
+}
+</style>
+</head>
+<body>
+<aside>
+  <div class="mono" aria-hidden="true">HM</div>
+  <h1>Harshit Mukati</h1>
+  <p class="role">B.Tech student, backend developer in the making</p>
+  <nav aria-label="Sections">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#beyond">Beyond code</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="side-links">
+    <a href="mailto:harshit123@gmail.com">harshit123@gmail.com</a>
+    <a href="https://github.com/" rel="noopener">GitHub</a>
+    <span style="color:var(--side-soft)">Rau, Indore</span>
+  </div>
+</aside>
+
+<main>
+<section id="about">
+  <h2>About</h2>
+  <p class="lead">I build the parts of an app you don’t see.</p>
+  <p>I’m an engineering student at IIST Indore (RGPV). I work mostly in Java and Python, building REST APIs and learning how microservices, authentication and monitoring fit together.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="group"><b>Languages</b><span>C, C++, Java, Python, JavaScript</span></div>
+  <div class="group"><b>Frontend</b><span>HTML, CSS, Tailwind CSS</span></div>
+  <div class="group"><b>Backend</b><span>Spring, FastAPI, REST APIs</span></div>
+  <div class="group"><b>Architecture</b><span>Microservices, API Gateway, event-driven systems, Avro</span></div>
+  <div class="group"><b>Databases</b><span>MySQL, PostgreSQL, Hibernate, Flyway</span></div>
+  <div class="group"><b>DevOps</b><span>Docker, Docker Compose, Prometheus, Loki, Tempo</span></div>
+  <div class="group"><b>Security</b><span>Keycloak, Spring Security</span></div>
+  <div class="group"><b>Tools</b><span>Git, GitHub, Swagger</span></div>
+  <div class="group"><b>Core</b><span>Data structures, OOP, problem solving</span></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <a class="proj" href="https://github.com/" rel="noopener"><h3>Library Management System</h3><p>Manage books, members and records for a library. <em>View code</em></p></a>
+  <a class="proj" href="https://github.com/" rel="noopener"><h3>School Management System</h3><p>Keep school data like students and classes in one place. <em>View code</em></p></a>
+  <a class="proj" href="https://github.com/" rel="noopener"><h3>Functional Website</h3><p>A working website built from HTML, CSS and JavaScript basics. <em>View code</em></p></a>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="step"><time>Expected 2028</time><div><h3>B.Tech in Engineering</h3><p>RGPV University, IIST Indore. Coursework: Data Structures, Algorithms, OOP.</p></div></div>
+  <div class="step"><time>2024</time><div><h3>Class XII, CBSE: 80%</h3><p>St. Xavier’s International School</p></div></div>
+  <div class="step"><time>2022</time><div><h3>Class X, CBSE: 93%</h3><p>St. Xavier’s International School</p></div></div>
+</section>
+
+<section id="beyond">
+  <h2>Beyond code</h2>
+  <div class="two">
+    <div><h3>Sports</h3><p>Basketball, cricket, table tennis and badminton. An integral part of the team.</p></div>
+    <div><h3>Certifications</h3><p>Completed programming-related certifications.</p></div>
+    <div><h3>College club</h3><p>Member of a college club.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="lead" style="font-size:clamp(26px,3.6vw,38px)">Open to internships and small projects.</p>
+  <a class="big-mail" href="mailto:harshit123@gmail.com">harshit123@gmail.com</a>
+</section>
+</main>
+<footer>Harshit Mukati, Rau, Indore</footer>
+<script>
+try{
+  var links=[].slice.call(document.querySelectorAll("nav a"));
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})}
+  })},{rootMargin:"-40% 0px -55% 0px"});
+  document.querySelectorAll("main section").forEach(function(s){io.observe(s)});
+}catch(e){}
+</script>
+</body>
+</html>
